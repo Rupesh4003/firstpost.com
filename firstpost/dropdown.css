@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+
+}
+.dropdown{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+button{
+    position: relative;
+    width: 200px;
+    height: 60px;
+    font-size: 24px;
+    background-color: aqua;
+    border: none;
+    cursor: pointer;
+    color: antiquewhite;
+}
+ul{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    background-color: blueviolet;
+    transform-origin: top;
+    transform: perspective(1000px) rotateX(-90deg);
+    transition: 0.5s;
+}
+
+ul.active{
+    transform: perspective(1000px),rotateX(0deg);
+}
+
+ul li{
+    list-style: none;
+
+}
+ul li a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background-color: brown;
+    color: #fff;
+    border-bottom: 1px solid black;
+}
+ul li a:hover{
+    background:blue;
+}
